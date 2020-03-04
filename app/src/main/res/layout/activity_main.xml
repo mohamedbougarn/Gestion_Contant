@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8BC34A"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="@string/titre1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/rouge"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lgon" />
+
+    <EditText
+        android:id="@+id/edt_auth_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Votre Login"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mots de passe" />
+
+    <EditText
+        android:id="@+id/edt_auth_psw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Votre mots de passe "
+        android:inputType="numberPassword" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_valid_auth"
+            android:layout_width="196dp"
+            android:layout_height="wrap_content"
+            android:text="VALIDER" />
+
+        <Button
+            android:id="@+id/btn_exit_auth"
+            android:layout_width="213dp"
+            android:layout_height="wrap_content"
+            android:text="EXIT" />
+
+    </LinearLayout>
+
+</LinearLayout>
